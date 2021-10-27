@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    font-family: arial;
+    background-color: rgb(121, 165, 167);
+}
+
+body{
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: right;
+}
+
+#left{
+    padding: 25px;
+    float: left;
+    width: 30%;
+    height: 100%;
+}
+    
+#middle{
+    padding-top: 20px;
+    width: 50%;
+    font-size: 80px;
+    float: left;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+}
+
+#right{
+    padding: 25px;
+    width: 20%;
+    float: right;
+    text-align: end;
+}
+
+a.nav-link{
+    text-align: center;
+    color: lavenderblush;
+}
