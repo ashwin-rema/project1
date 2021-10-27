@@ -4,7 +4,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <meta charset="utf-8" />
     <title>LoginPage</title>
-    <style>@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap%27);</style>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');</style>
     <link rel="stylesheet" type="text/css" href="loginpagefe.css">
     <script>
         //script to load new user registration page on click of sign up button.
@@ -16,15 +16,19 @@
 <body>
     <!--Form contains the login details and action:SELF to load the same page after the form is submitted on Submit button.-->
     <form name="loginform" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-    <p id = "he">HERTZ</p>
-    <div id="login_container">
+    <p id = "he" class="h1 text-center text-uppercase font-italic text-monospace">HERTZ</p>
+      <br>
+    <div id="login_container" style ="margin-left: 570px;">
                  <!--User Input fields to capture user entered info-->
+  
                  <input type="text" id="Uname" name="username" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" style="width:400px;"/></br></br>
-                 <input type="password" name="password" id="Pass"  class="form-control"  placeholder="password" aria-describedby="basic-addon2" style="width:400px;" /></br></br>
-                 <input type="submit"  class="btn btn-outline-success" id="submit" value="Login" name="submit"/>
+
+                 <input type="password" name="password" id="Pass"  class="form-control "  placeholder="password" aria-describedby="basic-addon2" style="width:400px;" /></br></br>
+                 <input type="submit"  class="btn btn-outline-success" id="submit" value="Login" name="submit" style ="margin-left: 140px;"/>
                  <br/><br>
+                 <br>
                  <label>New User? &nbsp;&nbsp;<button type="button" onclick ="javasript:NewUserRegistrationPage()" class="btn btn-outline-primary">Sign Up</button></label>
-    </div>
+    <!--</div>-->
     </form>
 </body>
 </html>
