@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <meta charset="utf-8" />
     <title>LoginPage</title>
-    <style>@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');</style>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap%27);</style>
     <link rel="stylesheet" type="text/css" href="loginpagefe.css">
     <script>
         //script to load new user registration page on click of sign up button.
@@ -18,13 +19,11 @@
     <p id = "he">HERTZ</p>
     <div id="login_container">
                  <!--User Input fields to capture user entered info-->
-                 <label><b>Username</b></label>
-                 <input type="text" id="Uname" name="username" placeholder="Enter your username"/></br></br>
-                 <label><b>Password</b></label>
-                 <input type="password" name="password" id="Pass" placeholder="Enter your password"/></br></br>
-                 <input type="submit" id="submit" value="Login" name="submit"/>
+                 <input type="text" id="Uname" name="username" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" style="width:400px;"/></br></br>
+                 <input type="password" name="password" id="Pass"  class="form-control"  placeholder="password" aria-describedby="basic-addon2" style="width:400px;" /></br></br>
+                 <input type="submit"  class="btn btn-outline-success" id="submit" value="Login" name="submit"/>
                  <br/><br>
-                 <label>New User? &nbsp;&nbsp;<button type="button" onclick ="javasript:NewUserRegistrationPage()">Sign Up</button></label>
+                 <label>New User? &nbsp;&nbsp;<button type="button" onclick ="javasript:NewUserRegistrationPage()" class="btn btn-outline-primary">Sign Up</button></label>
     </div>
     </form>
 </body>
